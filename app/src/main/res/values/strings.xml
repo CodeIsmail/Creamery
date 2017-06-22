@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Creamery</string>
+    <string name="submit_button">order</string>
+
+    <!--HEADER-->
+    <string name="flavour">FLAVOURS</string>
+    <string name="toppings">TOPPINGS</string>
+
+    <!--FLAVOURS-->
+    <string name="cake_batter">Cake Batter</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="french_vanilla">French Vanilla</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="cheese_cake">Cheese Cake</string>
+    <string name="sweet_cream">Sweet Cream</string>
+
+    <!--FLAVOURS PRICES-->
+    <string name="cake_batter_price">$6.45</string>
+    <string name="chocolate_price">$5.00</string>
+    <string name="french_vanilla_price">$6.00</string>
+    <string name="strawberry_price">$5.80</string>
+    <string name="cheese_cake_price">$6.99</string>
+    <string name="sweet_cream_price">$5.99</string>
+
+    <!--TOPPINGS-->
+    <string name="chocolate_topping">Chocolate</string>
+    <string name="mnms_topping">MnMs</string>
+    <string name="almonds_topping">Almond</string>
+    <string name="brownies_topping">Brownies</string>
+    <string name="kitkat_topping">Kitkat</string>
+    <string name="cherries_topping">Cherries</string>
+
+    <!--TOPPINGS PRICES-->
+    <string name="chocolate_topping_price">$2.50</string>
+    <string name="mnms_topping_price">$3.00</string>
+    <string name="almonds_topping_price">$3.99</string>
+    <string name="brownies_topping_price">$3.39</string>
+    <string name="kitkat_topping_price">$2.89</string>
+    <string name="cherries_topping_price">$3.00</string>
+
+    <string name="summary_header">Summary</string>
+
+</resources>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background4"
+    tools:context="com.example.andela.creamery.MainActivity"
+
+    >
+
+    <ImageView
+        android:src="@drawable/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/flavour"
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/flavour_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/cake_batter"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cakebatter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cake_batter"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cake_batter_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cake_batter_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/strawberry" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/strawberry"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/strawberry_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/strawberry_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/frenchvanilla" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/french_vanilla"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/french_vanilla_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/french_vanilla_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chocolatecup" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/chocolate"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/chocolate_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chocolate_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cheesecake" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cheese_cake"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cheese_cake_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cheese_cake_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sweetcream" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/sweet_cream"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/sweet_cream_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/sweet_cream_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/toppings"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/chocolate_topping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/chocolate_topping"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/chocolate_topping"
+                android:text="@string/chocolate_topping_price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/mmns_topping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/mnms_topping"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mmns_topping"
+                android:paddingBottom="15dp"
+                android:text="@string/mnms_topping_price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/kitkat_topping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/kitkat_topping"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/kitkat_topping"
+                android:paddingBottom="15dp"
+                android:text="@string/kitkat_topping_price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+            <CheckBox
+                android:id="@+id/cherries_topping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/cherries_topping_price"
+                android:layout_alignParentBottom="true"
+                android:text="@string/cherries_topping"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/cherries_topping_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/cherries_topping_price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <!---->
+
+            <CheckBox
+                android:id="@+id/brownies_topping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brownies_topping"
+                android:layout_toLeftOf="@+id/brownies_topping_price"
+                android:textSize="23sp"/>
+
+
+            <TextView
+                android:id="@+id/brownies_topping_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/brownies_topping_price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <!---->
+            <CheckBox
+                android:id="@+id/almonds_topping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/almonds_topping_price"
+                android:layout_centerVertical="true"
+                android:text="@string/almonds_topping"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/almonds_topping_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/almonds_topping_price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+
+            android:onClick="processOrder"
+            android:text="@string/submit_button" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
